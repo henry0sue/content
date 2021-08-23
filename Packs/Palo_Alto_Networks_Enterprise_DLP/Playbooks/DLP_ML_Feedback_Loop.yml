@@ -248,6 +248,7 @@ tasks:
       id: 80704bde-d8c4-4222-8268-ddbe518350bf
       version: -1
       name: Ask user for feedback
+      description: Ask user for feedback
       scriptName: DlpAskFeedback
       type: regular
       iscommand: false
@@ -285,6 +286,7 @@ tasks:
       id: 17fb1219-0545-4f65-8142-8249d9d5eafb
       version: -1
       name: Received feedback
+      description: Received feedback from Slack
       type: condition
       iscommand: false
       brand: ""
