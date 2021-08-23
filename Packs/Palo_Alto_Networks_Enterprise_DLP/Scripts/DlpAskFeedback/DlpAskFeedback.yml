@@ -1,0 +1,31 @@
+commonfields:
+  id: 4451d5b6-ea77-4681-8625-67d6bcb8f3c2
+  version: 12
+vcShouldKeepItemLegacyProdMachine: false
+name: DlpAskFeedback
+script: ''
+type: python
+tags: []
+enabled: true
+args:
+- name: file_name
+  required: true
+- name: policy_name
+  required: true
+- name: task
+  description: A manual task that this task can close
+- name: user
+  required: true
+  description: The recipient to ask for feedback from
+scripttarget: 0
+subtype: python3
+dependson:
+  must:
+  - SlackV2|||send-notification
+  should:
+  - SlackV2|||send-notification
+pswd: ""
+runonce: false
+dockerimage: demisto/python3:3.9.6.22912
+runas: DBotWeakRole
+engineinfo: {}
